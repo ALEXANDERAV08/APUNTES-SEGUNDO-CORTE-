@@ -316,3 +316,74 @@ Donde:
 Un ejemplo práctico del modelo por corriente de campo se encuentra en el control de velocidad de un motor de corriente continua. 
 Variando la corriente de campo mediante el voltaje $$v_c$$(t), se puede controlar el flujo magnético  Φ y por lo tanto, ajustar el par motor $$T_m $$, lo que afectará la velocidad 
 del motor.
+
+# Metodo de energia para obtener las ecuaciones de movimiento
+
+El método de energía es una técnica en dinámica que se usa para derivar las ecuaciones de movimiento de un sistema mediante principios de energía, como la energía cinética, la energía potencial y el trabajo realizado. Este enfoque puede ser particularmente útil en sistemas complejos o con múltiples grados de libertad.
+
+## Sistema conservativo
+
+Toda la energia cinetica y potencial sale de sistema en forma de trabajo mecanico.
+
+$$ Δ(T + U) = ΔW $$
+
+si no entra energia externa entonces la ecuacion queda de la siguiente manera:
+
+$$ Δ(T + U) = 0 $$
+$$ T + U = Constante $$
+
+## Ejemplo
+![image](https://github.com/user-attachments/assets/37b44332-acc2-46e2-9b26-1f663412b37b)
+
+$$ T + U = \frac{1}{2} mẋ^{2} + \frac{1}{2} kx^{2} = Constante $$
+$$ \frac{d}{dt} (T + U) = mẋẍ + kxẋ = (mẍ + kx)ẋ = 0 $$
+$$ mẍ + kx = 0 $$
+
+## Recomendaciones
+
+- Se recomienda su uso en sistemas simples, ya que entre mas interacción de elementos mas difícil es establecer las energías que intervienen
+- Para sistemas muy complejos es mejor usar leyes de Newton
+- Para usar el enfoque de energía existe un método más completo basado en las ideas de lenguaje
+
+
+# Conversión movimiento Translacional - Rotacional
+
+La conversión de movimiento translacional a rotacional es un proceso mediante el cual un desplazamiento lineal o rectilíneo (translacional) se convierte en un movimiento giratorio (rotacional). Este principio se utiliza en muchos mecanismos y máquinas. 
+
+## Ejemplo
+
+un ejemplo común es el sistema de un pistón en un motor de combustión interna, donde el movimiento lineal del pistón se transforma en el giro del cigüeñal. La conversión puede lograrse mediante diversos mecanismos, como engranajes, ruedas y ejes o sistemas de biela-manivela.
+
+## Aplicaciones
+
+### 1. Tornillo sinfin
+![image](https://github.com/user-attachments/assets/fe006d09-fd3e-4b47-be59-92bd7f0ff6fd)
+
+Su formula es: $ J\frac{W}{8}(\frac{L}{2π})^{2} $
+
+### 2. Piñon cremallera 
+![image](https://github.com/user-attachments/assets/937bdd29-e85e-4f13-ac29-eec201ec86ca)
+
+Su formula es: $ J = Mr^{2} = \frac{W}{8}r^{2} $
+
+### Trenes de Engranajes, Palancas y Bandas
+![image](https://github.com/user-attachments/assets/cf4a074e-2b53-42ca-831a-be25cc80c1cf)
+
+$$ r_{1}N_{2} = r_{2}N_{1} $$
+$$ θ_{1}r_{1} = θ_{2}r_{2} $$
+$$ T_{1}θ_{1} = T_{2}θ_{2} $$
+
+Por lo tanto : 
+
+$$ \frac{T_{1}}{T_{2}} = \frac{N_{1}}{N_{2}} = \frac{θ_{2}}{θ_{1}} $$
+
+## conclusiones
+- El modelamiento de los sistemas mecánicos requiere la aplicación de modelo del fenómeno fisico
+- El modelo de ecuaciones diferenciales permitirá describir el movimiento en el dominio del tiempo para cualquier instante de tiempo
+- El movimiento lineal y el movimiento rotacional son comparables y los fenomenos fisicos que se presentan son similares
+- Un modelo de movimiento rotacional y lineal pueden ser iguales sin embargo describen dos tipos de fenómenos totalmente diferentes.
+
+
+
+
+
